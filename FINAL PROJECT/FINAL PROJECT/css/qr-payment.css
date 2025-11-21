@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: white;
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 20px 40px;
+    background: #ededed;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003C96;
+}
+
+.logo span {
+    color: #FFCC00;
+}
+
+/* LAYOUT */
+.wrapper {
+    display: flex;
+    background: white;
+}
+
+/* LEFT SIDE */
+.left-box {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+.back-text img {
+    width: 30px;
+}
+
+.back-btn {
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.qr-box {
+    margin-top: 20px;
+    width: 360px;
+    height: 360px;
+    background: white;
+    display: flex; 
+    justify-content: center; /* Center QR code */
+    align-items: center; /* Center QR code */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.qr-box img {
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+}
+
+/* RIGHT SIDE BLUE BACKGROUND */
+.right-box {
+    flex: 1;
+    background: #003C96;
+    padding: 60px 40px;
+    position: relative;
+    color: white; /* Text color for right side */
+}
+
+/* White curved shape */
+.right-box::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background: white;
+    border-radius: 60% 0 0 60%;
+}
+
+/* SUMMARY CARD */
+.summary-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    width: 80%;
+    color: #003C96; /* Changed text color to match the theme */
+    margin-left: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.summary-card .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.summary-card .title img {
+    width: 40px;
+}
+
+.label {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.time {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.idpay {
+    font-weight: 600;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 4px;
+}
+
+/* BUTTON */
+.pay-btn {
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 80%;
+    padding: 12px 0;
+    background: #FFD84D;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pay-btn:hover {
+    background: #f2c93f;
+}
